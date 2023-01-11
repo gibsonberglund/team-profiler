@@ -1,0 +1,24 @@
+.body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.displaycard {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px;
+    text-align: left;
+    font-size: 32px;
+}
+
+.displaycard.header {
+    background-color: rgb(67, 67, 148);
+    color: white;
+}
+
+.info {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
