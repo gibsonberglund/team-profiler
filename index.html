@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <style>
-    .body {
+    header {
+        text-align: center;
+        background-color: rgb(67, 67, 148);
+        padding: 10px;
+    }
+    
+    header h2 {
+        font-size: 24px;
+    }
+
+    header h3 {
+        font-size: 18px;
+        color: rgb(170, 52, 52)
+    }
+
+    .mainbody {
         display: flex;
         flex-flow: row wrap;
     }
     
     .displaycard {
         display: inline-block;
-        margin: 20px;
+        margin: 15px;
         padding: 15px;
         text-align: left;
         font-size: 32px;
+        background-color: rgb(137, 137, 137);
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgb(79, 79, 79);
     }
     
-    .displaycard.header {
+    .displaycard header {
         background-color: rgb(67, 67, 148);
         color: white;
     }
@@ -27,7 +45,7 @@
         display: block;
         margin: 10px;
         padding: 10px;
-        font-size: 14px;
+        font-size: 18px;
     }
     </style>
     <title>My Team</title>
@@ -37,16 +55,46 @@
     <header>
         <h1>My Team</h1>
     </header>
-    <section class="mainbody"><div class="displaycard">
-    <header>b</header>
-    <li class="info">b</li>
-    <li class="info">b</li>
-    <li class="info">5</li>
-</div><div class="displaycard">
-    <header>j</header>
-    <li class="info">j</li>
-    <li class="info">j</li>
-    <li class="info">7</li>
-</div>   </section>
+    <section class="mainbody">
+<div class="displaycard">
+    <header>
+    <h2>humphrey\</h2>
+    <h3>Manager</h3>
+    </header>
+    <li class="info">ID: 5</li>
+    <li class="info">Email: huyt@ghum.cn</li>
+    <li class="info">Office #: 3</li>
+</div>
+
+<div class="displaycard">
+    <header>
+    <h2>Manny</h2>
+    <h3>Engineer</h3>
+    </header>
+    <li class="info">ID: 9</li>
+    <li class="info">Email: ick.slick@slick.ick</li>
+    <li class="info">Github username: gurblegooble</li>
+</div>
+
+<div class="displaycard">
+    <header>
+    <h2>munchies</h2>
+    <h3>Intern</h3>
+    </header>
+    <li class="info">ID: blam</li>
+    <li class="info">Email: erousdo.com</li>
+    <li class="info">School: blubber</li>
+</div>
+
+<div class="displaycard">
+    <header>
+    <h2>vincent</h2>
+    <h3>Engineer</h3>
+    </header>
+    <li class="info">ID: 1</li>
+    <li class="info">Email: illmatic@gml.com</li>
+    <li class="info">Github username: tryme420</li>
+</div>
+   </section>
 </body>
 </html>

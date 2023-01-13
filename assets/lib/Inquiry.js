@@ -18,20 +18,38 @@ var template =
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <style>
-    .body {
+    header {
+        text-align: center;
+        background-color: rgb(67, 67, 148);
+        padding: 10px;
+    }
+    
+    header h2 {
+        font-size: 24px;
+    }
+
+    header h3 {
+        font-size: 18px;
+        color: rgb(170, 52, 52)
+    }
+
+    .mainbody {
         display: flex;
         flex-flow: row wrap;
     }
     
     .displaycard {
         display: inline-block;
-        margin: 20px;
+        margin: 15px;
         padding: 15px;
         text-align: left;
         font-size: 32px;
+        background-color: rgb(137, 137, 137);
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgb(79, 79, 79);
     }
     
-    .displaycard.header {
+    .displaycard header {
         background-color: rgb(67, 67, 148);
         color: white;
     }
@@ -40,7 +58,7 @@ var template =
         display: block;
         margin: 10px;
         padding: 10px;
-        font-size: 14px;
+        font-size: 18px;
     }
     </style>
     <title>My Team</title>
@@ -110,10 +128,13 @@ inquirer
                     const manCard =
 `
 <div class="displaycard">
-    <header>${manager.name}</header>
-    <li class="info">${manager.id}</li>
-    <li class="info">${manager.email}</li>
-    <li class="info">${manager.officeNumber}</li>
+    <header>
+    <h2>${manager.name}</h2>
+    <h3>Manager</h3>
+    </header>
+    <li class="info">ID: ${manager.id}</li>
+    <li class="info">Email: ${manager.email}</li>
+    <li class="info">Office #: ${manager.officeNumber}</li>
 </div>
 `;
                     template = template.concat(manCard);
@@ -153,10 +174,13 @@ inquirer
                     const engCard =
 `
 <div class="displaycard">
-    <header>${empEng.name}</header>
-    <li class="info">${empEng.id}</li>
-    <li class="info">${empEng.email}</li>
-    <li class="info">${empEng.github}</li>
+    <header>
+    <h2>${empEng.name}</h2>
+    <h3>Engineer</h3>
+    </header>
+    <li class="info">ID: ${empEng.id}</li>
+    <li class="info">Email: ${empEng.email}</li>
+    <li class="info">Github username: ${empEng.github}</li>
 </div>
 `;
                     template = template.concat(engCard);
@@ -196,10 +220,13 @@ inquirer
                     const intCard =
 `
 <div class="displaycard">
-    <header>${empInt.name}</header>
-    <li class="info">${empInt.id}</li>
-    <li class="info">${empInt.email}</li>
-    <li class="info">${empInt.school}</li>
+    <header>
+    <h2>${empInt.name}</h2>
+    <h3>Intern</h3>
+    </header>
+    <li class="info">ID: ${empInt.id}</li>
+    <li class="info">Email: ${empInt.email}</li>
+    <li class="info">School: ${empInt.school}</li>
 </div>
 `;
                     template = template.concat(intCard);
