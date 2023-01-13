@@ -1,5 +1,5 @@
 //Tests to write:
-const Employee = require('../assets/lib/Inquiry');
+const Employee = require('../assets/lib/Employee');
 
 
 //Employee
