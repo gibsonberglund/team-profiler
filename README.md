@@ -17,6 +17,8 @@
 
 ## Usage
         When you start the application, you will be prompted with questions about each employee. Once you finish entering all employee info, you can choose to enter another employee or finish. Once you finish, an html file will be generated that can be launched in the browser.
+        Walkthrough video:
+[https://drive.google.com/file/d/1L9SBy5NXSKGqI4CSlwnBa_r55o8qiN9O/view]
 
 ## Credits
         UofM Bootcamp
